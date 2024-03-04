@@ -4,37 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <title>log in</title>
 </head>
 <body>
 
-    <form name="login_form">
-        <div>
-            <h1 class="contact-title">ログイン</h1>
-        </div>
-        <div>
+    <div class="main">
 
-            <div>
+        <div class="title">
+            <h2>DEEP DIVE</h2>
+            <h2>LOGIN SCREEN</h2>
+        </div>
+
+        <div>
+            <form name="login_form" class="forms">
+                <h3>WELCOME</h3>
                 <div>
-                    <input type="id" name="id" placeholder="ID">
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password">
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <input type="password" name="pass" placeholder="Password">
+        
+                <button type="button" onClick="nextPage();">check</button>
+            </form>
+        </div>
+    
+    </div>
+
+
+    <div class="load" id="load_id">
+        <div class="box">
+            <p>LOADING..</p>
+            <div class="wrapper">
+                <div class="bg">
+                <div class="el"></div>
                 </div>
             </div>
-
         </div>
-        <button type="button" onClick="nextPage();">認証</button>
-    </form>
+    </div>
+    
     
     <!--ログイン処理-->
     <script language="JavaScript" type="text/javascript">
+        let item = document.querySelector(`#load_id`);
         function nextPage() {
+            document.getElementById("load_id").style.display = "block";
             id = document.login_form.id.value
             pwd = document.login_form.pass.value;
-            location.href = id + pwd + ".html";
         }
+        item.addEventListener(`animationend`, () => {
+            location.href = id + pwd + ".html";
+        });
     </script>
 </body>
 </html>
