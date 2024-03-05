@@ -70,6 +70,14 @@ img{
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%);
 }
+.result button {
+    background-color: red;
+    width: 30%;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
 
 .result img{
     width: 50px;

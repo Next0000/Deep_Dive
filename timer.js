@@ -1,6 +1,6 @@
 let seconds;
 let minutes;
-let count = 60000;
+let count = 20000;
 let intervalId;
 let fadeClass;
 var time;
