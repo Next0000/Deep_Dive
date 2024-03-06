@@ -72,6 +72,7 @@ img{
 }
 .result button {
     background-color: red;
+    color:black;
     width: 30%;
     border: 0;
     padding: 10px;
