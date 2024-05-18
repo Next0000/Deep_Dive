@@ -1,0 +1,148 @@
+/*共通デザイン*/
+html {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+h1{
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+h2{
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+    background-color:gray;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+header{
+    background-color: #4b4b4b;
+}
+
+/*ヘッダー要素　/各種アイコン/検索窓*/
+/*各種アイコン*/
+.header_div{
+    display: flex;
+    background-color: #2589d0;
+    padding: 0 15px;
+}
+.header_div_img{
+    display: flex;
+    justify-content: space-between;
+    background-color: #91ff00;
+}
+.header_div_img img{
+    background-color: wheat;
+    width: 20%;
+    height: auto;
+    object-fit:contain;
+}
+
+/*検索窓*/
+.forms{
+    padding: 2Vh;
+    text-align: center;
+}
+.forms input {
+    width: 70%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .forms button {
+    width: 20%;
+    border: 0;
+    padding: 15px;
+  }
+
+
+/*クラスhome内要素　/コンテンツアイテム*/
+/*コンテンツアイテム*/
+.item{
+    background-color: tomato;
+}
+.item_text{
+    display: flex; 
+    justify-content: space-between;
+}
+.item_pic{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.tab-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    max-width: 500px;
+    height: 100%;
+}
+
+.tab-1 > label {
+    flex: 1 1;
+    order: -1;
+    opacity: .5;
+    min-width: 70px;
+    padding: .6em 1em;
+    border-radius: 5px 5px 0 0;
+    background-color: #4b4b4b;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab-1 input {
+    display: none;
+}
+
+.tab-1 > div {
+    display: none;
+    width: 100%;
+    padding: 1.5em 1em;
+    background-color: #fff;
+}
+
+.tab-1 label:has(:checked) {
+    opacity: 1;
+}
+
+.tab-1 label:has(:checked) + div {
+    display: block;
+}
+
+.tab-1 div{
+    height: 100%;
+}
+
+/*タブ内ボタン*/
+.button {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh;
+    border: 1px solid #2589d0;
+    color: #2589d0;
+}
