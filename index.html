@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- KP用、シーン別サイト一覧-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>move_page</title>
-
-    <style>
-        ul {
-            padding: 0;
-        }
-        li {
-            margin: 5vh;
-        }
-    </style>
+    <link rel="stylesheet" href="./login.css">
+    <title>log in</title>
 </head>
 <body>
 
-    <ul>
-        <li><a href= "01_4649/index.html" >Ver4649潜入</a></li>
-        <li><a href= "xxxx.html" >捜査終了後</a></li>
-        <li><a href= "xxxx.html" >サイバースペース初日-警察署潜入</a></li>
-        <li><a href= "xxxx.html" >サイバースペース2日目-学会</a></li>
-        <li><a href= "xxxx.html" >サイバースペース3日目-病院</a></li>
-        <li><a href= "04_4649/index.html" >サイバースペース4日目-4649/電話イベ</a></li>
-    </ul>
+    <div class="main">
 
+        <div class="title">
+            <h2>DEEP DIVE</h2>
+            <h2>LOGIN SCREEN</h2>
+        </div>
 
+        <div>
+            <form name="login_form" class="forms">
+                <div>
+                    <div>
+                        <input type="id" name="id" placeholder="ID">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" placeholder="Password">
+                    </div>
+                </div>
+        
+                <button type="button" onClick="nextPage();">check</button>
+            </form>
+        </div>
     
+    </div>
+
+
+    <div class="load" id="load_id">
+        <div class="box">
+            <p>LOADING..</p>
+            <div class="wrapper">
+                <div class="bg">
+                <div class="el"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--ログイン処理-->
+    <script language="JavaScript" type="text/javascript">
+        let item = document.querySelector(`#load_id`);
+        function nextPage() {
+            document.getElementById("load_id").style.display = "block";
+            id = document.login_form.id.value
+            pwd = document.login_form.pass.value;
+        }
+        item.addEventListener(`animationend`, () => {
+            location.href = "01_4649/" +id + pwd + ".html";
+        });
+    </script>
 </body>
 </html>
