@@ -37,23 +37,23 @@ a{
 }
 
 header{
-    background-color: #4b4b4b;
+    background-color: #cfcfcf;
+}
+footer{
+    background-color: #cfcfcf;
 }
 
 /*ヘッダー要素　/各種アイコン/検索窓*/
 /*各種アイコン*/
 .header_div{
     display: flex;
-    background-color: #2589d0;
     padding: 0 15px;
 }
 .header_div_img{
     display: flex;
     justify-content: space-between;
-    background-color: #91ff00;
 }
 .header_div_img img{
-    background-color: wheat;
     width: 20%;
     height: auto;
     object-fit:contain;
@@ -80,7 +80,8 @@ header{
 /*クラスhome内要素　/コンテンツアイテム*/
 /*コンテンツアイテム*/
 .item{
-    background-color: tomato;
+    background-color: white;
+    border: solid;
 }
 .item_text{
     display: flex; 
@@ -89,10 +90,9 @@ header{
 .item_pic ul{
     display: flex; 
     justify-content: space-between;
-    background-color: #2589d0;
 }
 .item_pic ul li{
-    background-color: #d9ff00;
+    position: relative;
     width: 30%;
 }
 .item_pic ul li p{
@@ -105,7 +105,13 @@ header{
     object-fit:contain;
     width: 100%;
 }
-
+#sold_out{
+    position: absolute;
+    text-align: center;
+    overflow:hidden;
+    width: 100%;
+    background-color:brown;
+}
 
 
 
