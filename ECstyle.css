@@ -53,8 +53,11 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-.header_div_img img{
+.header_div_img li{
     width: 20%;
+}
+.header_div_img img{
+    width: 100%;
     height: auto;
     object-fit:contain;
 }
