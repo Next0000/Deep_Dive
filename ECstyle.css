@@ -32,6 +32,10 @@ body {
     margin: 0;
 }
 
+a{
+    text-decoration:none;
+}
+
 header{
     background-color: #4b4b4b;
 }
@@ -82,12 +86,24 @@ header{
     display: flex; 
     justify-content: space-between;
 }
-.item_pic{
+.item_pic ul{
     display: flex; 
     justify-content: space-between;
+    background-color: #2589d0;
+}
+.item_pic ul li{
+    background-color: #d9ff00;
+    width: 30%;
+}
+.item_pic ul li p{
+    margin: 0;
+}
+.item_pic_div_text{
+    line-break:anywhere;
 }
 .item_pic img{
-    width: 30%;
+    object-fit:contain;
+    width: 100%;
 }
 
 
