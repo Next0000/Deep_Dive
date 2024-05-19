@@ -86,6 +86,9 @@ header{
     display: flex; 
     justify-content: space-between;
 }
+.item_pic img{
+    width: 30%;
+}
 
 
 
