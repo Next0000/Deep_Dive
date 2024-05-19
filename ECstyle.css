@@ -127,7 +127,15 @@ footer{
     font-weight: bold;
     background-color:brown;
 }
-
+#bid{
+    position: absolute;
+    text-align: center;
+    overflow:hidden;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color:chocolate;
+}
 /*タブ*/
 .tab-1 {
     display: flex;
@@ -181,4 +189,11 @@ footer{
     padding: 1.5vh;
     border: 1px solid #2589d0;
     color: #2589d0;
+}
+
+
+/*チャット*/
+.item_chat li{
+    border-bottom:#d1d1d1 solid;
+    padding: 5px 2vh;
 }

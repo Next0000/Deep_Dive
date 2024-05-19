@@ -11,51 +11,137 @@
     <!-- header -->
     <header>
         <div class="title">
-            <img src="../pic/ddロゴ.png" style="width: 50%;">
+            <a href="./guest0000.html"><img src="../pic/ddロゴ.png" style="width: 50%;"></a>
         </div>
 
         <div class="header_div">
             <h2 style="flex: 1.5;">home</h2>
 
-            <div class="header_div_img"style="flex: 1;">
-                <img src="../pic/user_ico.png">
-                <img src="../pic/mail_ico.png">
-                <img src="../pic/chat_ico.png">
+            <div style="flex: 1;">
+                <ul class="header_div_img">
+                    <li><img src="../pic/user_ico.png"></li>
+                    <li><img src="../pic/mail_ico.png"></li>
+                    <li><a href="./general.html"><img src="../pic/chat_ico.png"></a></li>
+                </ul>
             </div>
         </div>
 
-        <form name="login_form" class="forms">
+        <form name="login_form" class="forms" onsubmit="return false;">
             <input type="id" name="id" placeholder="ID">
             <button type="button" onClick="nextPage();">check</button>
         </form>
     </header>
 
     <div class="home">
-        
+
+
         <div class="tab-1">
             <label>
                 <input type="radio" name="tab-1" checked>
-                劇薬
+                ショップ
             </label>
-            <div>
-                <a href= "./one/index.html" class="button">buy ></a>
-                <a href= "./one/index.html" class="button">chat ></a>
+            <div style="padding: 0;">
+                <!-- item1 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>stolen goods</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><img src="../pic/bom/item1.jpg"><div class="item_pic_div_text"><p>10Grams jackforest</p><br><p style="color: brown;">B:61.17</p></div></li>
+                            <li><span id="sold_out">sold out</span><img src="../pic/bom/item2.jpg"><div class="item_pic_div_text"><p>TNT(trinitrotoluene) C6H2CH3(NO2)3</p><br><p style="color: brown;">B:42.18</p></div></li>
+                            <li><img src="../pic/bom/item3.jpg"><div class="item_pic_div_text"><p>ChaosDrop</p><br><p style="color: brown;">B:23.47</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3> </h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><img src="../pic/bom/item4.jpg"><div class="item_pic_div_text"><p>5Grams ShadowTears</p><br><p style="color: brown;">B:58.73</p></div></li>
+                            <li><span id="sold_out">sold out</span><img src="../pic/bom/item5.jpg"><div class="item_pic_div_text"><p>Nitroglycerin</p><br><p style="color: brown;">B:75.31</p></div></li>
+                            <li><img src="../pic/bom/item6.jpg"><div class="item_pic_div_text"><p>DreamDust</p><br><p style="color: brown;">B:66.49</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3> </h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><span id="sold_out">sold out</span><img src="../pic/bom/item7.jpg"><div class="item_pic_div_text"><p>TNT(CH3NO2)</p><br><p style="color: brown;">B:87.62</p></div></li>
+                            <li><img src="../pic/bom/item8.jpg"><div class="item_pic_div_text"><p>10Grams MindBender</p><br><p style="color: brown;">B:9.56</p></div></li>
+                            <li><img src="../pic/bom/item9.jpg"><div class="item_pic_div_text"><p>EtherealBlend</p><br><p style="color: brown;">B:13.28</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        
+            <label>
+                <input type="radio" name="tab-1">
+                チャット
+            </label>
+            <div style="padding: 0">
+                <ul class="item_chat">
+                    <li>EclipseHunter - やめたれよ@Void</li>
+                    <li>Void - その叫びの記録はあるのか？</li>
+                    
+                    <li>++Shadow++ - 症状については...激しい錯乱状態で、謎の叫びを発しているとしか分からん。</li>
+                    <li>Night01_C - 同じ症状なら、偶然ではないかも。</li>
+                    <li>EclipseHunter - やめたれよ@Void</li>
+                    <li>Void - その症状は具体的に？</li>
+                    <li>++Shadow++ - 全員が同じ症状で死んでいるとしか。</li>
+
+                    <li>小松菜 - その死因に共通点は？</li>
+                    <li>Void - それも単なる偶然かもしれない。</li>
+                    <li>Night01_C - 歴代の持ち主が異常な死を遂げてるって噂に関しては？</li>
+                    <li>小松菜 - まぁ一致する点が多いのは確かに興味深くはある。</li>
+                    <li>Void - 伝承は時に変質するものだ。</li>
+
+                    <li>++Shadow++ - 伝承が一致している点も無視できないゾ。</li>
+                    <li>EclipseHunter - 伝承だけでは証拠にならないゾ。</li>
+                    <li>Void - 古い書物には多くの誤情報があるので、それだけで断定はできないでしょ。</li>
+                    <li>++Shadow++ - いやいや、邪神信仰に関わる書物にも骨董品の記載があるんだよなぁ。調べてから疑ってもろて。</li>
+                    <li>EclipseHunter - 何にせよ、技術だけでは邪神召喚と結びつけにくい。</li>
+
+                    <li>小松菜 - 単に、古代の職人技術を過小評価していただけ説</li>
+                    <li>Void - それだけで異常と言えるのか？</li>
+                    <li>++Shadow++ - 金属加工技術が当時の水準を超えている。加点。</li>
+                    <li>小松菜 - その技術の詳細が不明確だね。減点。</li>
+                    <li>Void - 具体的にどんな技術だ？</li>
+                    <li>++Shadow++ - 骨董品の製造年には不可能な技術が使われているんだよなぁ。@Void</li>
+
+                    <li>EclipseHunter - それ、単なる都市伝説では？</li>
+                    <li>Night01_C - 噂とは、持ち主が邪神の名を叫んで死ぬってやつ？</li>
+                    <li>Void - 一応歴史あるアイテムらしいが、証拠は？@++Shadow++</li>
+                    <li>小松菜 - でた。その噂は信じるに値しない。</li>
+                    <li>++Shadow++ - 骨董品、邪神召喚に用いられるアーティファクトに似てるような希ガス</li>
+                    <li>・・・</li>
+                </ul>
             </div>
         
-            <label>
-                <input type="radio" name="tab-1">
-                盗品
-            </label>
-            <div>ぜひタブの背景色をお好みのものに変えてみてください。</div>
-        
-            <label>
-                <input type="radio" name="tab-1">
-                個人情報
-            </label>
-            <div>もちろんレスポンシブ対応で、タブの追加にも対応しています。</div>
         </div>
-        
+
     </div>
+
+
+    <footer style="padding: 15px;">
+
+        <ul>
+            <li><p>terms of service</p></li>
+            <li><p>Protection of personal information</p></li>
+        </ul>
+        <p>
+            &copy; 2024 deep dive
+        </p>
+
+    </footer>
 
 
     
