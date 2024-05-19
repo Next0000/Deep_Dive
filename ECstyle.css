@@ -117,13 +117,12 @@ footer{
     text-align: center;
     overflow:hidden;
     width: 100%;
+    color: white;
+    font-weight: bold;
     background-color:brown;
 }
 
-
-
-
-
+/*タブ*/
 .tab-1 {
     display: flex;
     flex-wrap: wrap;
