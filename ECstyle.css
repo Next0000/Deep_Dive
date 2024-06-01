@@ -8,7 +8,7 @@ html {
     height: 100%;
     max-width: 600px;
     margin: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: #cfcfcf;
 }
 ul{
     margin: 0;
@@ -26,7 +26,6 @@ h2{
 
 body {
     font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-    background-color:gray;
     width: 100%;
     height: 100%;
     position: relative;
@@ -34,26 +33,30 @@ body {
 }
 
 a{
+    color: #7cfc00;
     text-decoration:none;
 }
-
+a:visited {
+    color:black;
+}
 header{
     max-width: 600px;
     margin: auto;
-    background-color: #cfcfcf;
+    background-color: #2a2a2a;
 }
 footer{
     max-width: 600px;
     margin: auto;
     box-sizing: border-box;
-    background-color: #cfcfcf;
+    color: lawngreen;
+    background-color: rgb(42, 42, 42);
 }
 
 /*ヘッダー要素　/各種アイコン/検索窓*/
 /*各種アイコン*/
 .header_div{
     display: flex;
-    padding: 0 15px;
+    padding: 0 2vh;
 }
 .header_div_img{
     display: flex;
@@ -74,6 +77,8 @@ footer{
     text-align: center;
 }
 .forms input {
+    background-color: #1b1b1b;
+    color: lawngreen;
     width: 70%;
     border: 0;
     padding: 15px;
@@ -82,50 +87,60 @@ footer{
     box-sizing: border-box;
   }
   .forms button {
-    width: 20%;
+    width: 15%;
     border: 0;
     padding: 15px;
     font-size: 16px;
     box-sizing: border-box;
+    background-color:lawngreen;
   }
 
 
 /*クラスhome内要素　/コンテンツアイテム*/
 /*コンテンツアイテム*/
 .item{
-    background-color: white;
-    border: solid;
+    background-color: #cfcfcf;
+    border-top: solid #2a2a2a;
 }
 .item_text{
     display: flex; 
     justify-content: space-between;
+    background-color: #2a2a2a;
+    color:#cfcfcf;
+    margin-bottom: 2vh;
 }
 .item_pic ul{
     display: flex; 
     justify-content: space-between;
+    margin: 3vh 0 3vh 0;
 }
 .item_pic ul li{
     position: relative;
     width: 30%;
+    border: 5px solid whitesmoke;
+    background-color: whitesmoke;
 }
 .item_pic ul li p{
     margin: 0;
+    color: #2a2a2a;
 }
 .item_pic_div_text{
     line-break:anywhere;
 }
-.item_pic img{
-    object-fit:contain;
+.item_pic li img{
     width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 #sold_out{
     position: absolute;
     text-align: center;
     overflow:hidden;
     width: 100%;
+    height: 100%;
     color: white;
     font-weight: bold;
-    background-color:brown;
+    background-color:rgba(0, 0, 0, 0.404);
 }
 #bid{
     position: absolute;
@@ -134,14 +149,13 @@ footer{
     width: 100%;
     color: white;
     font-weight: bold;
-    background-color:chocolate;
+    background-color:rgb(91, 131, 52);
 }
 /*タブ*/
 .tab-1 {
     display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
-    height: 100%;
 }
 
 .tab-1 > label {
@@ -165,7 +179,7 @@ footer{
     display: none;
     width: 100%;
     padding: 1.5em 1em;
-    background-color: #fff;
+    background-color: #cfcfcf;
 }
 
 .tab-1 label:has(:checked) {
@@ -177,23 +191,14 @@ footer{
 }
 
 .tab-1 div{
-    height: 100%;
+    height: auto;
 }
-
-/*タブ内ボタン*/
-.button {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5vh;
-    border: 1px solid #2589d0;
-    color: #2589d0;
-}
-
 
 /*チャット*/
+.item_chat{
+    padding: 0 2vh 0 2vh;
+}
 .item_chat li{
-    border-bottom:#d1d1d1 solid;
-    padding: 5px 2vh;
+    border-bottom:#a8a8a8 solid;
+    padding: 5px 0 5px 0;
 }

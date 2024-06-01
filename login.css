@@ -6,8 +6,8 @@ html {
 
 body {
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  background-color: black;
-  color: springgreen;
+  background-color: rgb(42, 42, 42);
+  color:lawngreen;
   width: 100%;
   position: relative;
   margin: 0;
@@ -37,13 +37,13 @@ h3{
 }
 
 .forms{
-    border: 1px solid springgreen;
+    border: 10px solid #cfcfcf;
     text-align: center;
     padding: 2Vh 0;
 }
 .forms input {
-    background-color: rgb(42, 42, 42);
-    color: springgreen;
+    background-color: rgb(27, 27, 27);
+    color: lawngreen;
     width: 80%;
     border: 0;
     margin: 0 0 15px;
@@ -52,12 +52,12 @@ h3{
     box-sizing: border-box;
   }
   .forms button {
-    background-color: rgb(29, 102, 33);
+    background-color:lawngreen;
     width: 30%;
     border: 0;
     padding: 10px;
     margin-top: 20px;
-    color: springgreen;
+    color: rgb(42, 42, 42);
   }
 
   /*down load*/
@@ -78,7 +78,7 @@ h3{
     position: fixed;
     text-align: center;
     top: 0;
-    background-color: black;
+    background-color: rgb(42, 42, 42);
   }
   .box{
     position: absolute;
@@ -87,17 +87,17 @@ h3{
     left: 50%;
     -webkit-transform : translate(-50%,-50%);
     transform : translate(-50%,-50%); 
-    border: 1px solid springgreen;
+    border: 1px solid lawngreen;
     padding-bottom: 1vh;
   }
 
   .wrapper{
     margin: auto;
     width: 60%;
-    border: 1px solid springgreen;
+    border: 1px solid lawngreen;
   }
   .bg {
-    background-color: springgreen;
+    background-color: lawngreen;
     animation: loading 3s ease-in-out;
   }
   
