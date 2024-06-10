@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ECstyle.css">
+    <title>DEEP DIVE</title>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="title">
+            <a href="./guest0000.html"><img src="../pic/ddロゴ.png" style="width: 50%; margin:2vw;"></a>
+        </div>
+
+        <div class="header_div">
+            <h2 style="flex: 1.5;"></h2>
+
+            <div style="flex: 1;">
+                <ul class="header_div_img">
+                    <li><img src="../pic/user_ico.png"></li>
+                    <li><img src="../pic/mail_ico.png"></li>
+                    <li><a href="./page3.html"><img src="../pic/chat_ico.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <form name="login_form" class="forms" onsubmit="return false;">
+            <input type="id" name="id" placeholder="ID">
+            <button type="button" onClick="nextPage();">Q</button>
+        </form>
+    </header>
+
+    <div class="home">
+
+
+        <div class="tab-1">
+            <label>
+                <input type="radio" name="tab-1" checked>
+                ショップ
+            </label>
+            <div style="padding: 0;">
+                <!-- item1 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>s_01</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><img src="../pic/goods/unknown.jpg"><div class="item_pic_div_text"><p>unknown</p><br><p style="color: #1b1b1b; font-weight: bold;">B:89.56</p></div></li>
+                            <li><img src="../pic/goods/gold bracelet.jpg"><div class="item_pic_div_text"><p>gold bracelet</p><br><p style="color: #1b1b1b; font-weight: bold;">B:77.7</p></div></li>
+                            <li><img src="../pic/goods/jar.jpg"><div class="item_pic_div_text"><p>jar</p><br><p style="color: #1b1b1b; font-weight: bold;">B:62.1</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>s_02</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><img src="../pic/goods/ivory ornament.jpg"><div class="item_pic_div_text"><p>ivory ornament</p><br><p style="color: #1b1b1b; font-weight: bold;">B:78.82</p></div></li>
+                            <li><span id="sold_out">sold out</span><img src="../pic/goods/old dagger.jpg"><div class="item_pic_div_text"><p>dagger</p><br><p style="color: #1b1b1b; font-weight: bold;">B:65.01</p></div></li>
+                            <li><img src="../pic/goods/hairdryer.jpg"><div class="item_pic_div_text"><p>hairdryer</p><br><p style="color: #1b1b1b; font-weight: bold;">B:32.9</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>s_03</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><span id="sold_out">sold out</span><img src="../pic/goods/key.jpg"><div class="item_pic_div_text"><p>silver key</p><br><p style="color: #1b1b1b; font-weight: bold;">B:66.66</p></div></li>
+                            <li><img src="../pic/goods/copper ornament.jpg"><div class="item_pic_div_text"><p>ornament</p><br><p style="color: #1b1b1b; font-weight: bold;">B:54.06</p></div></li>
+                            <li><span id="bid">Current price <br>B:50.03</span><img src="../pic/goods/PromisedClock.jpg"><div class="item_pic_div_text"><p>PromisedClock</p><br><p style="color: #1b1b1b; font-weight: bold;">B:00.00</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        
+            <label>
+                <input type="radio" name="tab-1">
+                チャット
+            </label>
+            <div style="padding: 0">
+                <ul class="item_chat">
+                    <li>Night - でたよその噂。全体チャットでやってくれ</li>
+                    <li>Hunter - 変にddを探ると管理人に消されるらしいよ、過去にもそれで失踪者が出たとか...</li>
+                    <li>Void - 調べたら？</li>
+                    <li>++Shadow++ - 誰が落札したんだろう</li>
+                    <li>小松菜 - 表じゃ売れないからこっちで売ってる訳だもんね。</li>
+
+                    <li>Hunter - でも実際、ダークウェブなら本物が転がってても不思議じゃないよね。</li>
+                    <li>Void - 単なる偶然なのでは。</li>
+                    <li>小松菜 - まぁ一致する点が多いなら、確かに興味深くはある。</li>
+                    <li>Hunter - なんでそんなもん持ってんだよ。</li>
+                    <li>Void - 古い書物には多くの誤情報がつきもの、それだけで断定はできないでしょ。</li>
+
+                    <li>++Shadow++ - 邪神信仰に関わる書物に、出品されているdaggerに似た記載があったんだよ。</li>
+                    <li>小松菜 - 単に、古代の職人技術を過小評価していただけ説</li>
+                    <li>Void - それだけでオカルト系と絡めるのは早計では...。</li>
+                    <li>++Shadow++ - 金属加工技術などが当時の水準を遥かに超えてる。</li>
+                    <li>小松菜 - 飛躍が過ぎる...うっすい情報量でよく話せるな</li>
+
+                    <li>Void - 技術ってどんな？</li>
+                    <li>++Shadow++ - daggerの製造年には不可能な技術が使われているんだよ。人間には作れない→神々の技術が必要</li>
+                    <li>Void - 一応歴史ある短剣らしいが、なぜに邪神信仰？</li>
+                    <li>++Shadow++ - dagger ← 邪神信仰に用いられる短剣に形が似てるような希ガス</li>
+                    <li>・・・</li>
+                </ul>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <footer style="padding: 15px;">
+        <p>
+            &copy; 2024 deep dive
+        </p>
+
+    </footer>
+
+
+    
+</body>
+</html>

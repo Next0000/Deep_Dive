@@ -1,0 +1,114 @@
+  #found_event{
+    display: block;
+  }
+  .found_event{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    background-color: rgb(42, 42, 42);
+  }
+
+ /*目の位置*/
+  .box{
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    height: 20vh;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%); 
+  }
+
+  #found_event{
+    display: none;
+  }
+  .eye{
+    position: relative;
+    height: 20vh;
+    margin: auto;
+  }
+  .out_el{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%); 
+
+    width: 50vw;/*幅*/
+	  height:  50vw;/*高さ*/
+	  border-radius: 50%;/*角丸*/
+    background-color: #e2e2e2;
+
+    overflow: hidden;
+  }
+  .in{
+    position: absolute;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%); 
+    border-radius: 50%;/*角丸*/
+    border: solid;
+  }
+  .in_el1{
+    top: -140%;
+    left: -250%;
+
+    width: 35vw;/*幅*/
+	  height:  35vw;/*高さ*/
+    animation: move_eye 1.5s forwards ease-in,move_eye1 .9s forwards ease-in 2s;
+  }
+
+  .in_el2{
+    top: 150%;
+    left: 140%;
+
+    width: 10vw;/*幅*/
+	  height:  10vw;/*高さ*/
+    animation: move_eye 1.5s forwards ease-in,move_eye2 .8s forwards ease-in 2s;
+  }
+  .in_el3{
+    top: 160%;
+    left: 50%;
+
+    width: 19vw;/*幅*/
+	  height:  19vw;/*高さ*/
+    animation: move_eye 1.5s forwards ease-in,move_eye3 2s both infinite alternate ease-in 2s;
+  }
+
+  @keyframes move_eye {
+    100% {
+      top: 50%;
+      left: 50%;
+    }
+  }
+  @keyframes move_eye1 {
+    100% {
+      width: 25vw;/*幅*/
+	    height:  25vw;/*高さ*/
+    }
+  }
+  @keyframes move_eye2 {
+    100% {
+      width: 28vw;/*幅*/
+	    height:  28vw;/*高さ*/
+    }
+  }
+  @keyframes move_eye3 {
+    100% {
+      width: 15vw;/*幅*/
+	    height:  15vw;/*高さ*/
+    }
+  }
+
+  
+  .after_eye{
+    opacity: 0;
+    color: #e2e2e2;
+    animation: after_e 3s forwards ease-in 15s;
+  }
+  @keyframes after_e {
+    100% {
+      opacity: 1;
+    }
+  }

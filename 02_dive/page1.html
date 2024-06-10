@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ECstyle.css">
+    <title>DEEP DIVE</title>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="title">
+            <a href="./guest0000.html"><img src="../pic/ddロゴ.png" style="width: 50%; margin:2vw;"></a>
+        </div>
+
+        <div class="header_div">
+            <h2 style="flex: 1.5;"></h2>
+
+            <div style="flex: 1;">
+                <ul class="header_div_img">
+                    <li><img src="../pic/user_ico.png"></li>
+                    <li><img src="../pic/mail_ico.png"></li>
+                    <li><a href="./page3.html"><img src="../pic/chat_ico.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <form name="login_form" class="forms" onsubmit="return false;">
+            <input type="id" name="id" placeholder="ID">
+            <button type="button" onClick="nextPage();">Q</button>
+        </form>
+    </header>
+
+    <div class="home">
+
+
+        <div class="tab-1">
+            <label>
+                <input type="radio" name="tab-1" checked>
+                ショップ
+            </label>
+            <div style="padding: 0;">
+                <!-- item1 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>p_01</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><span id="sold_out">sold out</span><img src="../pic/bom/item1.jpg"><div class="item_pic_div_text"><p>10Grams jackforest</p><br><p style="color: #1b1b1b; font-weight: bold;">B:61.17</p></div></li>
+                            <li><span id="bid">Current price <br>B:50.18</span><img src="../pic/bom/item2.jpg"><div class="item_pic_div_text"><p>TNT(trinitrotoluene) C6H2CH3(NO2)3</p><br><p style="color: #1b1b1b; font-weight: bold;">B:42.18</p></div></li>
+                            <li><img src="../pic/bom/item3.jpg"><div class="item_pic_div_text"><p>ChaosDrop</p><br><p style="color: #1b1b1b; font-weight: bold;">B:23.47</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- item2 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>p_02</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><img src="../pic/bom/item4.jpg"><div class="item_pic_div_text"><p>5Grams ShadowTears</p><br><p style="color: #1b1b1b; font-weight: bold;">B:58.73</p></div></li>
+                            <li><span id="bid">Current price <br>B:85.31</span><img src="../pic/bom/item5.jpg"><div class="item_pic_div_text"><p>Nitroglycerin</p><br><p style="color: #1b1b1b; font-weight: bold;">B:75.31</p></div></li>
+                            <li><img src="../pic/bom/item6.jpg"><div class="item_pic_div_text"><p>DreamDust</p><br><p style="color: #1b1b1b; font-weight: bold;">B:66.49</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="item" style="padding: 2vh;">
+                    <div class="item_text">
+                        <h3>p_03</h3>
+                    </div>
+                    <div class="item_pic">
+                        <ul>
+                            <li><span id="bid">Current price <br>B:100.92</span><img src="../pic/bom/item7.jpg"><div class="item_pic_div_text"><p>TNT(CH3NO2)</p><br><p style="color: #1b1b1b; font-weight: bold;">B:87.62</p></div></li>
+                            <li><img src="../pic/bom/item8.jpg"><div class="item_pic_div_text"><p>10Grams MindBender</p><br><p style="color: #1b1b1b; font-weight: bold;">B:9.56</p></div></li>
+                            <li><img src="../pic/bom/item9.jpg"><div class="item_pic_div_text"><p>EtherealBlend</p><br><p style="color: #1b1b1b; font-weight: bold;">B:13.28</p></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        
+            <label>
+                <input type="radio" name="tab-1">
+                チャット
+            </label>
+            <div style="padding: 0">
+                <ul class="item_chat">
+                    <li>Boo_1222 - 暗号通貨が主流だね。ここではビッツコイン(B)単位で値段が書かれてる。</li>
+                    <li>Ema_W - 支払い方法は？</li>
+                    <li>Alex - 他店より少し高いけど、リピートする価値あり。</li>
+                    <li>Boo_1222 - 慣れれば簡単だよ。</li>
+                    <li>Daemon@ - 初心者でも扱いやすい？</li>
+
+                    <li>Boo_1222 - 少量でも十分効くよ。</li>
+                    <li>Ema_W - 量はどれくらい必要？</li>
+                    <li>Alex - さっき話してた薬のリンク->xxxx/xxxx/xxxx</li>
+                    <li>StoneBlack - ありがとう</li>
+                    <li>Boo_1222 - ルートが複雑だから大量に買うなら1ヵ月以上待つかな。</li>
+
+                    <li>StoneBlack - 届くまで何日かかりそう？</li>
+                    <li>Boo_1222 - TNT(CH3NO2)とかどう？丁度出品されてるし。</li>
+                    <li>StoneBlack - そんなとこ</li>
+                    <li>Alex - その並び、もしや爆薬？</li>
+                    <li>StoneBlack - 会話割ってごめん。塩素酸ナトリウム、硝酸、硫酸、あたりでオススメある？</li>
+
+                    <li>CcLemon - 副作用が少なくて使いやすいらしい。</li>
+                    <li>Boo_1222 - 私も前にそれ買ったけど、いいよね。</li>
+                    <li>Alex - 睡眠薬だよ！</li>
+                    <li>Ema_W - どんなやつ？</li>
+                    <li>Alex - 先週買った薬、効果抜群だった！</li>
+                    <li>・・・</li>
+                </ul>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <footer style="padding: 15px;">
+        <p>
+            &copy; 2024 deep dive
+        </p>
+
+    </footer>
+
+
+    
+</body>
+</html>
