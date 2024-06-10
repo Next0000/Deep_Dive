@@ -3,7 +3,7 @@
   }
   .found_event{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     text-align: center;
     top: 0;
@@ -111,4 +111,14 @@
     100% {
       opacity: 1;
     }
+  }
+
+  .after_eye button{
+    background-color: red;
+    color:black;
+    width: 30%;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bolder;
   }
