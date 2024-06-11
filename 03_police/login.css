@@ -27,10 +27,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2a2a2ae8;
 }
 h2{
-  color: rgb(48, 97, 0);
+  color: rgb(42, 83, 0);
   font-weight:lighter;
 }
 h3{
@@ -45,6 +44,7 @@ h3{
     border: 10px solid #cfcfcf;
     text-align: center;
     padding: 2Vh 0;
+    background-color: #2a2a2ac4;
 }
 .forms input {
     background-color: rgb(27, 27, 27);

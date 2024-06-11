@@ -10,38 +10,37 @@
 
     <div class="main">
 
-        <div class="title" style="overflow-wrap: break-word;">
-            <h2>let item = document.querySelector(`#load_id`);
-                function nextPage() {
-                    pwd = document.login_form.pass.value;
-                    if(pwd == input){
-                        document.getElementById("load_id").style.display = "block";
+        <div class="title">
+            <div style="overflow-wrap: break-word;">
+                <h2>let item = document.querySelector(`#load_id`);
+                    function nextPage() {
+                        pwd = document.login_form.pass.value;
+                        if(pwd == input){
+                            document.getElementById("load_id").style.display = "block";
+                        }
                     }
-                }
-                item.addEventListener(`animationend`, () => {
-                    location.href = "./" +pwd + ".html";
-                });
-            </h2>
-            <h2>
-                warning: <br>unexpected end-of-input, expecting keyword_end<br>
-                syntax error: unexpected end-of-input, expecting keyword_end
-            </h2>
-            <h2>
-                warning: <br>nextPage is not defined at ButtonElement.onclick<br>
-                ReferenceError: nextPage is not defined at ButtonElement.onclick
-            </h2>
-            <h2>
-                warning: <br>maximum recursion depth exceeded<br>
-                RecursionError: maximum recursion depth exceeded
-            </h2>
+                    item.addEventListener(`animationend`, () => {
+                        location.href = "./" +pwd + ".html";
+                    });
+                </h2>
+                <h2>
+                    warning: <br>nextPage is not defined at ButtonElement.onclick<br>
+                    ReferenceError: nextPage is not defined at ButtonElement.onclick
+                </h2>
+            </div>
         </div>
 
         <div class="main_form">
+            <div class="title">
+                <h2 style="color: limegreen;">DEEP DIVE</h2>
+                <h2 style="color: limegreen;">LOGIN SCREEN</h2>
+            </div>
+
             <div>
                 <form name="login_form" class="forms">
                     <div>
                         <div>
-                            <p>君たちはどこに居る？</p>
+                            <p>君たちは今どこに居る？</p>
                         </div>
                         <br>
                         <div>
