@@ -7,14 +7,14 @@
     position: fixed;
     text-align: center;
     top: 0;
-    background-color: rgb(42, 42, 42);
+    background-color: #2a2a2a;
   }
 
  /*目の位置*/
   .box{
     position: absolute;
     width: 80vw;
-    top: 50%;
+    top: 40%;
     left: 50%;
     height: 20vh;
     -webkit-transform : translate(-50%,-50%);
@@ -104,7 +104,7 @@
   
   .after_eye{
     opacity: 0;
-    color: #e2e2e2;
+    color: black;
     animation: after_e 3s forwards ease-in 15s;
   }
   @keyframes after_e {
@@ -114,8 +114,8 @@
   }
 
   .after_eye button{
-    background-color: red;
-    color:black;
+    background-color: black;
+    color:#2a2a2a;
     width: 30%;
     border: 0;
     padding: 10px;

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>log in</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="main_form">
+            <div class="title">
+                <h2>DEEP DIVE</h2>
+                <h2>LOGIN SCREEN</h2>
+            </div>
+    
+            <div>
+                <form name="login_form" class="forms">
+                    <div>
+                        <div>
+                            <p>君たちはどこに居る？</p>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="id" name="pass" placeholder="Answer">
+                        </div>
+                    </div>
+            
+                    <button type="button" onClick="nextPage();">check</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div class="load" id="load_id">
+        <div class="box">
+            <p>LOADING..</p>
+            <div class="wrapper">
+                <div class="bg">
+                <div class="el"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--ログイン処理-->
+    <script language="JavaScript" type="text/javascript">
+        let item = document.querySelector(`#load_id`);
+        function nextPage() {
+            pwd = document.login_form.pass.value;
+            if(pwd == "サイバースペース"){
+                document.getElementById("load_id").style.display = "block";
+            }
+        }
+        item.addEventListener(`animationend`, () => {
+            location.href = "./" +pwd + ".html";
+        });
+    </script>
+</body>
+</html>

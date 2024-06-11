@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../ECstyle.css">
-    <link rel="stylesheet" href="found_you.css">
     <title>DEEP DIVE</title>
 
 </head>
@@ -12,7 +11,7 @@
     <!-- header -->
     <header>
         <div class="title">
-            <a href="./guest0000.html"><img src="../pic/ddロゴ.png" style="width: 50%; margin:2vw;"></a>
+            <a href="./サイバースペース.html"><img src="../pic/ddロゴ.png" style="width: 50%; margin:2vw;"></a>
         </div>
 
         <div class="header_div">
@@ -88,43 +87,6 @@
     </footer>
 
 
-    <div class="found_event" id="found_event">
-        <div class="box">
-            <div class="eye">
-                <div class="out_el">
-                    <div class="in in_el1"></div>
-                    <div class="in in_el2"></div>
-                    <div class="in in_el3"></div>
-                </div>
-            </div>
-
-            <div class="after_eye">
-                <p>-<br>GMの秘匿チャットに「!」を送信してください</p>
-                <p>処理が入ります<br>この画面のままお待ちください</p>
-                <button id="clause">
-                    ボタン
-                </button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!--event処理;-->
-    <script language="JavaScript" type="text/javascript">
-        let item = document.querySelector(`#found_event`);
-        function nextPage() {
-            id = document.login_form.id.value;
-            if(id == 906){
-                console.log(id)
-                document.getElementById("found_event").style.display = "block";
-            }
-        }
-        document.getElementById("clause").addEventListener("click", button_click);
-        function button_click(){
-            document.getElementById("found_event").style.display = "none";
-        }
-    </script>
     
 </body>
 </html>

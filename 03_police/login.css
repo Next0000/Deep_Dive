@@ -1,0 +1,110 @@
+html {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  background-color: rgb(42, 42, 42);
+  color:lawngreen;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.main{
+  position: relative;
+  max-width: 600px;
+  height: 80vh;
+  padding: 15px;
+  margin: auto;
+}
+
+.main_form{
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3{
+    font-weight:lighter;
+}
+.title{
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+.forms{
+    border: 10px solid #cfcfcf;
+    text-align: center;
+    padding: 2Vh 0;
+}
+.forms input {
+    background-color: rgb(27, 27, 27);
+    color: lawngreen;
+    width: 80%;
+    border: 0;
+    margin: 0 0 15px;
+    font-size: 16px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .forms button {
+    background-color:lawngreen;
+    width: 30%;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    color: rgb(42, 42, 42);
+  }
+
+  /*down load*/
+  @keyframes loading {
+    0% {
+      width: 0;
+    } 100% {
+      width: 100%;
+    }
+  }
+  
+  #load_id{
+    display: none;
+  }
+  .load{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    background-color: rgb(42, 42, 42);
+  }
+  .box{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%); 
+    border: 1px solid lawngreen;
+    padding-bottom: 1vh;
+  }
+
+  .wrapper{
+    margin: auto;
+    width: 60%;
+    border: 1px solid lawngreen;
+  }
+  .bg {
+    background-color: lawngreen;
+    animation: loading 3s ease-in-out;
+  }
+  
+  .el{
+    &:after {
+      content: "";
+      display: block;
+      padding: .5vh 0;
+    }
+  }
