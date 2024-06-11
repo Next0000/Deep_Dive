@@ -50,13 +50,25 @@
     border-radius: 50%;/*角丸*/
     border: solid;
   }
+
+  .in_el0{
+    top: 70%;
+    left: 50%;
+
+    width: 18vw;/*幅*/
+	  height:  18vw;/*高さ*/
+    background-color: #009494;
+    border: none;
+    animation: move_eye .1s forwards ease-in 2s
+  }
+
   .in_el1{
     top: -140%;
     left: -250%;
 
     width: 35vw;/*幅*/
 	  height:  35vw;/*高さ*/
-    animation: move_eye 1.5s forwards ease-in,move_eye1 .9s forwards ease-in 2s;
+    animation: move_eye .5s forwards ease-in 2.3s,move_eye1 .3s forwards ease-in 3.3s;
   }
 
   .in_el2{
@@ -65,15 +77,15 @@
 
     width: 10vw;/*幅*/
 	  height:  10vw;/*高さ*/
-    animation: move_eye 1.5s forwards ease-in,move_eye2 .8s forwards ease-in 2s;
+    animation: move_eye .5s forwards ease-in 2.3s,move_eye2 .5s forwards ease-in 3.5s;
   }
   .in_el3{
     top: 160%;
     left: 50%;
 
-    width: 19vw;/*幅*/
-	  height:  19vw;/*高さ*/
-    animation: move_eye 1.5s forwards ease-in,move_eye3 2s both infinite alternate ease-in 2s;
+    width: 15vw;/*幅*/
+	  height:  15vw;/*高さ*/
+    animation: move_eye .5s forwards ease-in 2.3s,move_eye3 1s both infinite alternate ease-in 4.3s;
   }
 
   @keyframes move_eye {
@@ -95,9 +107,13 @@
     }
   }
   @keyframes move_eye3 {
+    0%{
+      border: solid #e2e2e2;
+    }
     100% {
-      width: 15vw;/*幅*/
-	    height:  15vw;/*高さ*/
+      width: 10vw;/*幅*/
+	    height:  10vw;/*高さ*/
+      border: solid #e2e2e2;
     }
   }
 
@@ -105,7 +121,7 @@
   .after_eye{
     opacity: 0;
     color: black;
-    animation: after_e 3s forwards ease-in 15s;
+    animation: after_e 3s forwards ease-in 10s;
   }
   @keyframes after_e {
     100% {
