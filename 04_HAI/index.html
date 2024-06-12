@@ -40,11 +40,11 @@
                 <form name="login_form" class="forms">
                     <div>
                         <div>
-                            <p>君たちは今どこに居る？</p>
+                            <p>どうやってここに来た？</p>
                         </div>
                         <br>
                         <div>
-                            <input type="id" name="pass" placeholder="●●●●●●●●">
+                            <input type="id" name="pass" placeholder="●●●●">
                         </div>
                     </div>
             
@@ -73,7 +73,7 @@
         let item = document.querySelector(`#load_id`);
         function nextPage() {
             pwd = document.login_form.pass.value;
-            if(pwd == "サイバースペース"){
+            if(pwd == "意識転送"){
                 document.getElementById("load_id").style.display = "block";
             }
         }
