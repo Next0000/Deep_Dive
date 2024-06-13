@@ -205,3 +205,57 @@ footer{
     border-bottom:#a8a8a8 solid;
     padding: 5px 0 5px 0;
 }
+
+/*メール*/
+.acc_div{
+    background-color: cfcfcf;
+    width: auto;
+    height: 80vh;
+}
+.accordion {
+    padding: 0 2vh 0 2vh;
+    border: 2px solid #999999;
+    color: #2a2a2a;
+}
+
+.accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid #2a2a2a;
+    border-right: 3px solid #2a2a2a;
+    content: '';
+    transition: transform .3s;
+}
+
+.accordion[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion p {
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 2em 1.5em;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion[open] p {
+    transform: none;
+    opacity: 1;
+}
