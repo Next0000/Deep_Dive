@@ -5,6 +5,37 @@ let intervalId;
 let fadeClass;
 var time;
 
+//
+const keyName = 'visited';
+const keyValue = true;
+
+if (!sessionStorage.getItem(keyName)) {
+    //sessionStorageにキーと値を追加
+    sessionStorage.setItem(keyName, keyValue);
+
+    //ここに初回アクセス時の処理
+    console.log("初めての訪問です");
+
+    //着信表示処理
+    //→電話かけるまでの時間を調整   
+    function firstscript() {
+        fadeClass = setInterval(Phone, 10000);
+    }
+    function Phone(){
+        document.getElementById("call_id").style.display = "block";
+        startTimer()
+        clearInterval(fadeClass);
+     }
+    // ページの読み込み完了と同時に実行されるよう指定
+    window.onload = firstscript;
+} else {
+    //ここに通常アクセス時の処理
+    console.log("訪問済みです");
+    document.getElementById("dam_id").style.display = "none";
+}
+
+
+
 //timer処理
 function startTimer() {
     intervalId = setInterval(updateTimer, 1000);
@@ -43,28 +74,17 @@ function reject_click(){
     document.getElementById("reject_id").insertAdjacentText('afterbegin', time + '拒否');
     document.getElementById("result_id").style.display = "block";
     document.getElementById("call_id").style.display = "none";
+    document.getElementById("dam_id").style.display = "none";
 }
 function response_click(){
     clearInterval(intervalId);
     document.getElementById("reject_id").insertAdjacentText('afterbegin', time + '応答');
     document.getElementById("result_id").style.display = "block";
     document.getElementById("call_id").style.display = "none";
+    document.getElementById("dam_id").style.display = "none";
 }
 function button_click(){
     document.getElementById("result_id").style.display = "none";
 }
 
-
-//着信表示処理
-//→電話かけるまでの時間を調整
-function firstscript() {
-    fadeClass = setInterval(Phone, 10000);
-}
-function Phone(){
-    document.getElementById("call_id").style.display = "block";
-    startTimer()
-    clearInterval(fadeClass);
- }
-// ページの読み込み完了と同時に実行されるよう指定
-window.onload = firstscript;
 
