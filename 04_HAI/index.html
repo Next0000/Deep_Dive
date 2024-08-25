@@ -73,13 +73,25 @@
         let item = document.querySelector(`#load_id`);
         function nextPage() {
             pwd = document.login_form.pass.value;
-            if(pwd == "意識転送"){
+            check = myFunction4(pwd);
+            
+            if(check == 133962){
                 document.getElementById("load_id").style.display = "block";
             }
         }
         item.addEventListener(`animationend`, () => {
             location.href = "./" +pwd + ".html";
         });
+
+        function myFunction4(pwd) {
+            var count = 0;
+            var x = 0;
+            while( count < pwd.length) {
+                x += pwd.charCodeAt(count);
+                count++;
+            }
+            return x;
+        }  
     </script>
 </body>
 </html>
